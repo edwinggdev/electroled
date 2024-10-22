@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { Carrousel } from "../components/Carrousel"
 import { Categorias } from "../components/Categorias"
+import { Marcas } from "../components/Marcas"
 import { ProductoCard } from "../components/ProductoCard"
 import { Url } from "../components/Const"
 export function Principal(){
@@ -31,7 +32,8 @@ export function Principal(){
         <div className="container-fluid">
             <div className="row">
                 <div className="col-2">
-                    <Categorias></Categorias>           
+                    <Categorias></Categorias>  
+                    <Marcas></Marcas>          
                 </div>
                 <div className="col-10">
                     <div className="row">

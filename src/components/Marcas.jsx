@@ -29,8 +29,8 @@ export function Marcas(){
     <ul className="list-unstyled">
       { items.map(dato=>(
         <li key={dato.des} className="my-2">
-          <a key={dato.id} href={`/marca/${ dato.des }`}>{ dato.des }</a>
-          {/* <Link key={dato.id} to={`/categoria/${ dato.des }`} className="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#forms-collapse" aria-controls="forms-collapse">{dato.des}</Link> */}
+          {/* <a key={dato.id} href={`/marca/${ dato.des }`}>{ dato.des }</a> */}
+          <Link key={dato.id} to={`/marca/${ dato.des }`} className="btn d-inline-flex align-items-center collapsed" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#forms-collapse" aria-controls="forms-collapse">{dato.des}</Link>
         </li>
       )) }
       {/* <li className="my-2">

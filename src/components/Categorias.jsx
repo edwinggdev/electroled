@@ -36,8 +36,8 @@ export function Categorias(){
     <ul className="list-unstyled">
       { items.map(dato=>(
         <li key={dato.des} className="my-2">
-          {/* <Link key={dato.des} categoria={ dato.des } to={`/categoria/${ dato.des }`}>{ dato.des }</Link> */}
-          <a key={dato.des} href={`/categoria/${ dato.des }`}  >{ dato.des }</a>
+          <Link key={dato.des} categoria={ dato.des } to={`/categoria/${ dato.des }`}>{ dato.des }</Link>
+          {/* <a key={dato.des} href={`/categoria/${ dato.des }`}  >{ dato.des }</a> */}
         </li>
       )) }
       {/* <a key={dato.id} href="#" onClick={handleNav(dato.des)}>{ dato.des }</a> */}

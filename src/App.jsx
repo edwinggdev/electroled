@@ -42,9 +42,32 @@ function App() {
                     <Routes>
                       <Route path="/" element={<Principal/>}></Route>
                       <Route path="/busqueda/:busca" element={<Busqueda/>}></Route>
-                      <Route path="/categoria/:busca" element={<Categoria/>}></Route>
-                      <Route path="/marca/:busca" element={<Marca/>}></Route>
+                      
+                      
                       <Route path="/producto/:busca" element={<Producto/>}></Route>
+                      {/* --- */}
+                      {/* <Route path="/categoria/:busca" element={<Categoria key={"/categoria/:busca"}/>}></Route> */}
+                      <Route path="/categoria/Cable" element={<Categoria key={"Cable"} busca="Cable"/>}></Route>
+                      <Route path="/categoria/Interruptores-Tomas" element={<Categoria key={"InterruptoresTomas"} busca="Interruptores-Tomas"/>}></Route>
+                      <Route path="/categoria/Plasticos" element={<Categoria key={"Plasticos"} busca="Plasticos"/>}></Route>
+                      <Route path="/categoria/Iluminacion" element={<Categoria key={"Iluminacion"}  busca="Iluminacion"/>}></Route>
+                      <Route path="/categoria/Herramientas" element={<Categoria key={"Herramientas"} busca="Herramientas"/>}></Route>
+                      <Route path="/categoria/Canaletas" element={<Categoria key={"Canaleta"} busca="Canaleta"/>}></Route>
+                      <Route path="/categoria/Tuberia" element={<Categoria key={"Tuberia"} busca="Tuberia"/>}></Route>
+                      <Route path="/categoria/Accesorios" element={<Categoria key={"Accesorios"} busca="Accesorios"/>}></Route>
+                      <Route path="/categoria/Otros" element={<Categoria key={"Otros"} busca="Otros"/>}></Route> 
+
+                      {/* ---marcas */}
+                      {/* <Route path="/marca/:busca" element={<Marca/>}></Route> */}
+                      <Route path="/marca/Generico" element={<Marca key={'Generico'} busca="Generico" />}></Route>
+                      <Route path="/marca/Otra" element={<Marca key={'Otra'} busca="Otra" />}></Route>
+                      <Route path="/marca/Mercury" element={<Marca key={'Mercury'} busca="Mercury" />}></Route>
+                      <Route path="/marca/Hikking" element={<Marca key={'Hikking'} busca="Hikking" />}></Route>
+                      <Route path="/marca/Condumex" element={<Marca key={'Condumex'} busca="Condumex" />}></Route>
+                      <Route path="/marca/Centelsa" element={<Marca key={'Centelsa'} busca="Centelsa" />}></Route>
+                      <Route path="/marca/Procables" element={<Marca key={'Procables'} busca="Procables" />}></Route>
+                      <Route path="/marca/Excelite" element={<Marca key={'Excelite'} busca="Excelite" />}></Route>
+                      <Route path="/marca/Dexon" element={<Marca key={'Dexon'} busca="Dexon" />}></Route>
                     </Routes>
                 {/* </div> */}
             </div>

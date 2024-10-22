@@ -48,7 +48,8 @@ export function Barra(){
             <NavDropdown title="Categorias" id="navbarScrollingDropdown">
             { items.map(dato=>(
               <NavDropdown.Item key={dato.des}>
-                <a key={dato.des} href={`/categoria/${ dato.des }`}>{ dato.des }</a>
+                <Link key={dato.des} categoria={ dato.des } to={`/categoria/${ dato.des }`}>{ dato.des }</Link>
+                {/* <a key={dato.des} href={`/categoria/${ dato.des }`}>{ dato.des }</a> */}
               </NavDropdown.Item>
             ))}
             </NavDropdown>
